@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "dragcal-prior"
+name = "gaze-supervision"
 version = "0.1.0"
 description = "Re-implementations of published gaze-calibration supervision schemes"
 readme = "README.md"
@@ -27,7 +27,7 @@ test = ["pytest>=7"]
 Repository = "https://github.com/george-wyy/gaze-calibration-schemes"
 
 [tool.setuptools]
-packages = ["dragcal_prior", "dragcal_prior.schemes"]
+packages = ["gaze_supervision", "gaze_supervision.schemes"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

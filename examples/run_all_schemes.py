@@ -18,8 +18,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from dragcal_prior.schemes import PRIOR_SCHEMES, run_all  # noqa: E402
-from dragcal_prior.synthetic import grid_sessions  # noqa: E402
+from gaze_supervision.schemes import PRIOR_SCHEMES, run_all  # noqa: E402
+from gaze_supervision.synthetic import grid_sessions  # noqa: E402
 
 
 def main() -> int:

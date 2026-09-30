@@ -33,7 +33,7 @@ They are realised here at 37.7 px/degree on a 1920×1080 display. At the nominal
 px/degree for that display the realised gate is about 4.5% tighter in visual angle — a
 nominal 2° gate is applied at 75.4 px rather than 79.0 px. No comparison reported in the
 paper is sensitive to this margin. Constants are marked `[here]` in
-`dragcal_prior/constants.py` where this applies.
+`gaze_supervision/constants.py` where this applies.
 
 ## Per scheme
 
@@ -156,7 +156,7 @@ rank by.
 
 **Where the pruning lives.** The 1° residual pruning is a **fitting-stage** step, not a
 pair-generation step. `blignaut()` therefore returns unpruned pairs; pass
-`prune_residual_deg=1.0` to `dragcal_prior.fitting.fit_mapping` to apply it. The original
+`prune_residual_deg=1.0` to `gaze_supervision.fitting.fit_mapping` to apply it. The original
 does not say how many rounds to run; one is used. If pruning would leave fewer than seven
 pairs it is skipped, since the polynomial is not identified below that.
 

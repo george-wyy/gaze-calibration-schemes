@@ -15,11 +15,11 @@ import numpy as np
 
 from _support import approx, raises
 
-from dragcal_prior import constants
-from dragcal_prior.fitting import fit_mapping, pairs_to_arrays
-from dragcal_prior.session import Drag, Session
-from dragcal_prior.schemes import PRIOR_SCHEMES, PUBLISHED_SCHEMES, run_all, run_scheme
-from dragcal_prior.synthetic import grid_sessions, session
+from gaze_supervision import constants
+from gaze_supervision.fitting import fit_mapping, pairs_to_arrays
+from gaze_supervision.session import Drag, Session
+from gaze_supervision.schemes import PRIOR_SCHEMES, PUBLISHED_SCHEMES, run_all, run_scheme
+from gaze_supervision.synthetic import grid_sessions, session
 
 #: One fixed session, reused by every test below so that they are cheap and comparable.
 SESS = session(distance_px=534.0, width_px=64.0, n_drags=3, seed=1)

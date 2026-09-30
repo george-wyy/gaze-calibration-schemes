@@ -6,10 +6,10 @@ description, and the deviations each makes from its original are documented per 
 including which constants are the original's and which were chosen here.
 
 No participant data ships with this package, and none is needed: supply your own
-recording as a :class:`~dragcal_prior.session.Session`, or use the synthetic sessions in
+recording as a :class:`~gaze_supervision.session.Session`, or use the synthetic sessions in
 ``examples/``.
 
-    >>> from dragcal_prior import synthetic_session, run_all
+    >>> from gaze_supervision import synthetic_session, run_all
     >>> session = synthetic_session()
     >>> {k: len(v) for k, v in run_all(session).items()}   # doctest: +SKIP
 """
@@ -35,7 +35,7 @@ __all__ = [
 
 
 def synthetic_session(*args, **kwargs) -> Session:
-    """Build a synthetic dragging session. See :func:`dragcal_prior.synthetic.session`."""
+    """Build a synthetic dragging session. See :func:`gaze_supervision.synthetic.session`."""
     from .synthetic import session as _session
 
     return _session(*args, **kwargs)

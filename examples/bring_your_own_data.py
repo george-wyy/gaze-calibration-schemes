@@ -3,7 +3,7 @@
 
     python examples/bring_your_own_data.py
 
-The only requirement is the data contract in ``dragcal_prior.session``: timestamps in
+The only requirement is the data contract in ``gaze_supervision.session``: timestamps in
 seconds, positions in screen pixels, and the press/release frame indices of each drag.
 Nothing here assumes a particular tracker, a participant identifier, or a file format.
 """
@@ -17,9 +17,9 @@ import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from dragcal_prior.fitting import fit_mapping  # noqa: E402
-from dragcal_prior.session import Drag, Session  # noqa: E402
-from dragcal_prior.schemes import run_all  # noqa: E402
+from gaze_supervision.fitting import fit_mapping  # noqa: E402
+from gaze_supervision.session import Drag, Session  # noqa: E402
+from gaze_supervision.schemes import run_all  # noqa: E402
 
 
 def build() -> Session:

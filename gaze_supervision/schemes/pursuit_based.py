@@ -6,7 +6,7 @@ exist -- an uninstructed drag -- the cursor path stands in for it. That substitu
 the structural deviation shared by every scheme in this module.
 
 Blignaut's residual pruning is deliberately **not** applied here: it is a fitting-stage
-step, see :func:`dragcal_prior.fitting.fit_mapping`.
+step, see :func:`gaze_supervision.fitting.fit_mapping`.
 """
 
 from __future__ import annotations
@@ -97,7 +97,7 @@ def blignaut(s: Session) -> list[Pair]:
     and the surviving subset's mean gaze is paired with the window's mean cursor.
 
     The residual pruning the original applies lives in the fitting stage -- call
-    :func:`dragcal_prior.fitting.fit_mapping` with ``prune_residual_deg=1.0``.
+    :func:`gaze_supervision.fitting.fit_mapping` with ``prune_residual_deg=1.0``.
 
     The original runs a concurrent naming task and cleans repeatedly; here there is no
     concurrent task and the cleaner runs once.

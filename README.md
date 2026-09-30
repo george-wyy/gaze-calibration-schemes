@@ -42,7 +42,7 @@ python tests/run_tests.py                 # 23 checks, no test framework needed
 ```
 
 ```python
-from dragcal_prior import synthetic_session, run_all
+from gaze_supervision import synthetic_session, run_all
 
 session = synthetic_session(distance_px=534, width_px=64)
 for scheme, pairs in run_all(session).items():
@@ -78,7 +78,7 @@ See [examples/bring_your_own_data.py](examples/bring_your_own_data.py) for a wor
 |---|---|
 | [docs/DEVIATIONS.md](docs/DEVIATIONS.md) | Where each re-implementation departs from its original, and which constants are the original's versus ours |
 | [docs/REFERENCES.md](docs/REFERENCES.md) | Full citations for the schemes |
-| [dragcal_prior/constants.py](dragcal_prior/constants.py) | Every threshold, annotated `[paper]` or `[here]` |
+| [gaze_supervision/constants.py](gaze_supervision/constants.py) | Every threshold, annotated `[paper]` or `[here]` |
 
 ## Citation
 
