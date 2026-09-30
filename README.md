@@ -1,4 +1,4 @@
-# dragcal
+# gaze-calibration-schemes
 
 Re-implementations of eight published gaze-calibration supervision schemes, plus one
 registered variant.
@@ -32,8 +32,8 @@ Fitts-grid fixture and a test suite that runs without a test framework.
 Only Python and numpy are required.
 
 ```bash
-git clone https://github.com/george-wyy/dragcal
-cd dragcal
+git clone https://github.com/george-wyy/gaze-calibration-schemes
+cd gaze-calibration-schemes
 pip install numpy          # the only dependency
 
 python examples/run_all_schemes.py        # pair counts over a synthetic grid

@@ -24,7 +24,7 @@ classifiers = [
 test = ["pytest>=7"]
 
 [project.urls]
-Repository = "https://github.com/george-wyy/dragcal"
+Repository = "https://github.com/george-wyy/gaze-calibration-schemes"
 
 [tool.setuptools]
 packages = ["dragcal_prior", "dragcal_prior.schemes"]
