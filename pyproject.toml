@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dragcal-prior"
+version = "0.1.0"
+description = "Re-implementations of published gaze-calibration supervision schemes"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24"]
+keywords = ["eye-tracking", "gaze-calibration", "implicit-calibration", "reproducibility"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering",
+  "Intended Audience :: Science/Research",
+]
+
+[project.optional-dependencies]
+# The test suite runs without pytest via `python tests/run_tests.py`. pytest is only
+# needed if you prefer `pytest tests/`.
+test = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/george-wyy/dragcal"
+
+[tool.setuptools]
+packages = ["dragcal_prior", "dragcal_prior.schemes"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
