@@ -91,5 +91,5 @@ For technical questions, please open a GitHub issue.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). The re-implementations are original code; the schemes they
-implement belong to their cited authors.
+MIT — see [LICENSE](LICENSE) and [NOTICE](NOTICE). The re-implementations are original
+code; the schemes they implement belong to their cited authors.

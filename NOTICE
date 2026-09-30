@@ -1,0 +1,8 @@
+gaze-calibration-schemes
+========================
+
+The supervision schemes re-implemented in this repository were published by their
+respective authors, who are cited in docs/REFERENCES.md.
+
+The MIT license in LICENSE covers this re-implementation only, not the schemes
+themselves. Rights in each scheme remain with its original authors.
